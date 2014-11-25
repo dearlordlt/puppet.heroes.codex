@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -8,16 +8,17 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ URL::route('home') }}">HOME</a>
+			<a class="navbar-brand" href="{{ URL::route('home') }}"><img src="{{ URL::route('home') }}/img/puppet-hero-home.jpg" height="25px" /></a>
 		</div>
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-        </form>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
+                <form class="navbar-form navbar-left form-inline" role="search">
+                    <li>
+                        <div class="form-group search-form-nav">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </li>
+                </form>
 		        @if(Auth::check())
 		        	<li><a href="{{ URL::route('account-sign-out') }}">Sign out</a></li>
 		        	<li><a href="{{ URL::route('account-change-password') }}">Change password</a></li>

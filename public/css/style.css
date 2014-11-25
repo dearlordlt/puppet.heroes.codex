@@ -1,3 +1,12 @@
 .h-space {
     padding-right: 5px;
 }
+
+body {
+    padding-top: 60px;
+}
+
+.search-form-nav {
+    margin-left: 15px;
+    margin-right: 15px;
+}
