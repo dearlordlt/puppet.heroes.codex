@@ -56,7 +56,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h4>Combat skills</h4>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h4>Non combat skills</h4>
@@ -83,6 +83,23 @@
                         <li><a>Navigation</a></li>
                         <li><a>Writing</a></li>
                         <li><a>Languages</a></li>
+                    </ul>
+                    <hr>
+                    <a class="btn btn-primary btn-md" href="#" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
+                    <a class="btn btn-success btn-md" href="#" role="button"><span class="glyphicon glyphicon-list"></span> </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Armor</h4>
+                    <ul class="list-unstyled">
+                        <li><a>1</a></li>
+                        <li><a>2</a></li>
+                        <li><a>3</a></li>
+                        <li><a>4</a></li>
+                        <li><a>5</a></li>
                     </ul>
                     <hr>
                     <a class="btn btn-primary btn-md" href="#" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
