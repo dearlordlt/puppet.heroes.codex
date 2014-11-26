@@ -41,7 +41,23 @@ Route::group(array('before' => 'auth'), function() {
 			'as' => 'account-change-password-post',
 			'uses' => 'AccountController@postChangePassword'
 		));
+
+        /*
+        | Add book (POSY)
+        */
+        Route::get('books/add', array(
+            'as' => 'book-add-post',
+            'uses' => 'BooksController@postAddBook'
+        ));
 	});
+
+    /*
+	| Add book (GET)
+	*/
+	Route::get('books/add', array(
+		'as' => 'book-add-get',
+		'uses' => 'BooksController@getAddBook'
+	));
 
 	/*
 	| Sign out (GET)
