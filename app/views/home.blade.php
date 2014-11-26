@@ -138,7 +138,7 @@
                     @if(Auth::check())
                         <a class="btn btn-primary btn-md" href="#" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
                     @endif
-                    <a class="btn btn-success btn-md" href="#" role="button"><span class="glyphicon glyphicon-list"></span> </a>
+                    <a class="btn btn-success btn-md" href="{{ URL::route('books') }}" role="button"><span class="glyphicon glyphicon-list"></span> </a>
                 </div>
             </div>
         </div>
