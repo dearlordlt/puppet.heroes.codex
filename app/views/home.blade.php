@@ -128,15 +128,13 @@
                 <div class="panel-body">
                     <h4>Books</h4>
                     <ul class="list-unstyled">
-                        <li><a>Book 1</a></li>
-                        <li><a>Book 2</a></li>
-                        <li><a>Book 3</a></li>
-                        <li><a>Book 4</a></li>
-                        <li><a>Book 5</a></li>
+                        @foreach ($books as $book)
+                            <li><a>{{ $book->name }}</a></li>
+                        @endforeach
                     </ul>
                     <hr>
                     @if(Auth::check())
-                        <a class="btn btn-primary btn-md" href="#" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
+                        <a class="btn btn-primary btn-md" href="{{ URL::route('book-add-get') }}" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
                     @endif
                     <a class="btn btn-success btn-md" href="{{ URL::route('books') }}" role="button"><span class="glyphicon glyphicon-list"></span> </a>
                 </div>

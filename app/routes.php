@@ -43,9 +43,9 @@ Route::group(array('before' => 'auth'), function() {
 		));
 
         /*
-        | Add book (POSY)
+        | Add book (POST)
         */
-        Route::get('books/add', array(
+        Route::post('books/add', array(
             'as' => 'book-add-post',
             'uses' => 'BooksController@postAddBook'
         ));

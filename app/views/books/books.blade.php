@@ -16,7 +16,7 @@
             <div class="well">
                 <h4 class="list-group-item-heading"></h4>
                 <p class="list-group-item-text">
-                    <a class="btn btn-primary btn-md" href="#" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
+                    <a class="btn btn-primary btn-md" href="{{ URL::route('book-add-get') }}" role="button"><span class="glyphicon glyphicon-plus-sign"></span> </a>
                 </p>
             </div>
         @endif
